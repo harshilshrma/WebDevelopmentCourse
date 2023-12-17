@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .item {
+            border: 2px solid black;
+            margin: 12px 7px;
+            padding: 12px 14px;
+            background-color: rgb(242, 188, 248);
+        }
+
+        .container {
+            width: 900px;
+            border: 2px solid red;
+            background-color: rgb(255, 228, 228);
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computers {
+            float: right;
+            width: 48%;
+        }
+
+        #meow {
+            float: left;
+            width: 100%;
+            clear: both;
+        }
+
+        p, h2 {
+            text-align: center;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>HENLO! Welcome to my store.</h1>
+        <div id="fruits" class="item">
+            <h2>This is fruits.</h2>
+            <p id="fruitsPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam molestias, laborum sequi
+                molestiae perspiciatis quasi earum sapiente accusamus, eos in assumenda eveniet et neque porro
+                aspernatur vitae impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius vero nisi quos
+                ipsum harum eos nihil, facilis doloribus esse tempora quod odit ducimus ut distinctio debitis? At
+                temporibus veniam corrupti.Fuga.
+            </p>
+
+        </div>
+        <div id="computers" class="item">
+            <h2>This is computers.</h2>
+            <p id="fruitsPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt dignissimos ipsam doloremque
+                ducimus saepe, porro magni quidem at incidunt nam rem repellat, explicabo, odio recusandae culpa aliquam
+                quod quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus, optio illum
+                blanditiis, facere soluta expedita nobis voluptatum molestias voluptates sapiente officia? Fugit eveniet
+                quaerat itaque soluta tenetur. Enim, ut.
+            </p>
+
+        </div>
+        <div id="meow" class="item">
+            <h2>This is meow.</h2>
+            <p id="fruitsPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt dignissimos ipsam doloremque
+                ducimus saepe, porro magni quidem at incidunt nam rem repellat, explicabo, odio recusandae culpa aliquam
+                quod quo.
+
+            </p>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
