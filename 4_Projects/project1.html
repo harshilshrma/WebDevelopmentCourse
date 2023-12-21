@@ -5,29 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is Harshil.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <style>
         h1 {
             text-align: center;
-            
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .boundary {
+            background-color: pink;
+            border: 2px solid rgb(255, 71, 102);
+            border-radius: 10px;
+        }
+
+        .profileimage {
+            border-color: 10px solid red;
+            border-radius: 20px;
+            width: 270px;
+            padding: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .font {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        .socialIconsContainer {
+            text-align: center;
+        }
+
+        .socialIcons {
+            width: 70px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 18px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Hey! My name is Harshil Sharma.</h1>
+        <h1 class="boundary">Hey! My name is Harshil Sharma.</h1>
     </header>
 
     <main>
+        <div class="socialIconsContainer">
+            <img src="https://avatars.githubusercontent.com/u/91001586?v=4" alt="My Profile Picture"
+                class="profileimage">
+            <p class="font">Find me on these platforms:</p>
+            <a href="https://github.com/harshilshrma" target="_main"><img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="socialIcons" alt="GitHub Icon"></a>
+            <a href="https://twitter.com/harshilshrma" target="_main"><img
+                    src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?w=740&t=st=1703158400~exp=1703159000~hmac=15aeae4dcb09c7b218c001735c40ab21bb51150b21436daa711a2803b1bdcd17" class="socialIcons" alt="X Icon"></a>
+            <a href="https://www.linkedin.com/in/harshilshrma/" target="_main"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png?20140125013055" alt="LinkedIn Icon" class="socialIcons"></a>
+            <a href="https://leetcode.com/harshilsharma2020/" target="_main"><img src="https://scontent.fjai1-2.fna.fbcdn.net/v/t39.30808-6/305317853_616467910000160_3824851731065368025_n.png?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_aid=0&_nc_ohc=8Jk7PXkNBH4AX9QcCHQ&_nc_ht=scontent.fjai1-2.fna&oh=00_AfBpJnIT5FTDL8DgvnjswNIpF69QePe5RG_y3WEjq4_-Rg&oe=6588C7DB" alt="LeetCode Icon" class="socialIcons"></a>
 
-
+        </div>
+        <hr>
 
     </main>
 
-    <footer>
-
-
+    <footer style="text-align: center;">
+        <p class="font"><b>Contact Me on:</b> +91-78519 22204</p>
+        <span class="font"><b>Or E-mail me at:</b> </span>
+        <a href="mailto:harshilsharma.dev@gmail.com" class="font">harshilsharma.dev@gmail.com</a>
     </footer>
 </body>
 
