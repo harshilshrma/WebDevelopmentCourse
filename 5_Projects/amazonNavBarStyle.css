@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    height: 60px;
+    background-color: #0f1111;
+    text-align: center;
+}
+
+.amazon {
+    font-size: 25px;
+    color: #f08804;
+    text-decoration: none;
+    padding-right: 200px;
+}
+
+.normalText{
+    color: white;
+    text-decoration: none;
+    padding-right: 200px;
+}
+
+#button {
+    background-color: #f08804;
+    color: white;
+    height: 19.2px;
+    width: 55px;
+}
