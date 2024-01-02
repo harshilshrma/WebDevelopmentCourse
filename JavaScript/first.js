@@ -1,6 +1,4 @@
-let number = prompt("Enter a number: ");
-if (number % 5 === 0) {
-    console.log(number, "is multiple of 5.")
-} else {
-    console.log(number, "is not a multiple of 5.")
-}
+let arr = [1, 2, 3, 4, 5];
+arr.forEach((val) => {
+    console.log(val * val * val);
+})
