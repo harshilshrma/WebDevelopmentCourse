@@ -1,8 +1,7 @@
-.parabc {
-    color: red;
-}
-
-.newClass{
-    background-color: yellow;
-    text-align: center;
+#btn {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(196, 158, 232);
+    border: 2px solid black;
+    border-radius: 102px;
 }
