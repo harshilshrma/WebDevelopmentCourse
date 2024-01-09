@@ -1,9 +1,3 @@
-// let h2 = document.querySelector("h2");
-// console.dir(h2.innerText += " from Apna College");
+let divbox = document.querySelector("div");
 
-let divs = document.querySelectorAll(".box");
-console.dir(divs);
-
-for (div of divs) {
-    console.log(div.innerText);
-}
+divbox.style.backgroundColor = "#df343434";
