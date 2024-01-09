@@ -1,6 +1,3 @@
-let btn = document.createElement("button");
-btn.innerText = "click me";
-console.log(btn);
+let para = document.querySelector("p");
 
-let div = document.querySelector("#box1")
-div.append(btn);
+para.classList.add("newClass");
