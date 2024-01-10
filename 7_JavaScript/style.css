@@ -1,7 +1,15 @@
 #btn {
     height: 50px;
     width: 100px;
-    background-color: rgb(196, 158, 232);
+    background-color: rgb(151, 49, 247);
     border: 2px solid black;
     border-radius: 102px;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    margin: 15px;
 }
