@@ -1,11 +1,11 @@
-const employee = {
-    calctax() {
-        console.log("tax is 1221222");
+class ToyotaCar {
+    start() {
+        console.log("start");
+    }
+
+    stop() {
+        console.log("stop");
     }
 }
 
-const arjun = {
-    salary: 5000000
-}
-
-arjun.__proto__ = employee;
+let fortuner = new ToyotaCar();
