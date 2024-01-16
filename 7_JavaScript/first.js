@@ -1,11 +1,19 @@
-class ToyotaCar {
-    start() {
-        console.log("start");
+class Parent {
+    eat() {
+        console.log("i am eating");
     }
 
-    stop() {
-        console.log("stop");
+    sleep() {
+        console.log("selees");
     }
 }
 
-let fortuner = new ToyotaCar();
+class Engineer extends Parent {
+    work() {
+        console.log("");
+    }
+}
+
+let harshilObj = new Engineer;
+
+
