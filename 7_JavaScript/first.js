@@ -1,29 +1,12 @@
-let DATA = "secret";
+let a = 10;
+let b = 12;
 
-class User {
-    constructor(name, email) {
-        this.name = name;
-        this.email = email;
-    }
-
-    viewData() {
-        console.log("Name: ", DATA);
-    }
-
+console.log("a + b =", a + b);
+console.log("a + b =", a + b);
+try {
+    console.log("a + b =", a + c);
+} catch(err) {
+    console.log("ERROR: ", err);
 }
-
-class Admin extends User {
-    constructor(name, email) {
-        super(name, email);
-
-    }
-
-    editData() {
-        DATA = "NEW VALUE";
-    }
-}
-
-let student1 = new User("harshil", "abc@email.com");
-let student2 = new User("fgbc", "abc@dsfv.com");
-
-let admin1 = new Admin("admin, ejbe@kfnasdk.com")
+console.log("a + b =", a + b);
+console.log("a + b =", a + b);
