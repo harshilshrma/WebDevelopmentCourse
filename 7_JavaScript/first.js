@@ -1,9 +1,17 @@
-function sum(a, b) {
-    console.log(a, "+", b, '=', a+b);
+function getData(dataId, getNextData) {
+    setTimeout(() => {
+        console.log("Data =", dataId);
+        getNextData();
+    }, 2000);
 }
 
-function calculator(a, b, sum) {
-    sum(a, b);
-}
-
-calculator(2, 5, sum);
+// This is a callback hell
+getData(1, () => {
+    getData(2, () => {
+        getData(3, () => {
+            getData(4, () => {
+                getData(5)
+            })
+        })
+    })
+});
