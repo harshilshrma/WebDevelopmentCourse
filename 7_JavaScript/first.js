@@ -1,9 +1,9 @@
-console.log("one");
-console.log("one");
+function sum(a, b) {
+    console.log(a, "+", b, '=', a+b);
+}
 
-setTimeout(() => {
-    console.log("helo");
-}, 4000)
+function calculator(a, b, sum) {
+    sum(a, b);
+}
 
-console.log("one");
-console.log("one");
+calculator(2, 5, sum);
