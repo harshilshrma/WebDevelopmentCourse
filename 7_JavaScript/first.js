@@ -1,17 +1,26 @@
-function getData(dataId, getNextData) {
-    setTimeout(() => {
-        console.log("Data =", dataId);
-        getNextData();
-    }, 2000);
+const  getPromise = () => {
+    return new Promise((resolve, reject) => {
+        console.log("i am a promise");
+        resolve("success");
+    });
 }
 
-// This is a callback hell
-getData(1, () => {
-    getData(2, () => {
-        getData(3, () => {
-            getData(4, () => {
-                getData(5)
-            })
-        })
-    })
-});
+let promise = getPromise();
+
+promise.then(() => {
+    console.log("resolved");
+})
+
+promise.catch(() => {
+    console.log("error caught");
+})
+
+
+
+// function getData(dataId) {
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("data : ", dataId);
+//         }, 5000);
+//     });
+// }
