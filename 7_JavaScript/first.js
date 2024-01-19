@@ -1,26 +1,10 @@
-const  getPromise = () => {
-    return new Promise((resolve, reject) => {
-        console.log("i am a promise");
-        resolve("success");
-    });
-}
+const URL = "https://cat-fact.herokuapp.com/facts";
 
-let promise = getPromise();
+const getFacts = async () => {
+    let response = await fetch(URL);
+    console.log(response); 
+    let data = await response.json();
+    console.log(data[2].text);
+};
 
-promise.then(() => {
-    console.log("resolved");
-})
-
-promise.catch(() => {
-    console.log("error caught");
-})
-
-
-
-// function getData(dataId) {
-//     return new Promise ((resolve, reject) => {
-//         setTimeout(() => {
-//             console.log("data : ", dataId);
-//         }, 5000);
-//     });
-// }
+getFacts();
