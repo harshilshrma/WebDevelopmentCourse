@@ -1,5 +1,5 @@
 
-import generateName from "sillyName";
-var sillyName = generateName();
+import superheroes from "superheroes";
+const heroName = superheroes.random();
 
-console.log(`My username is: ${sillyName}.`);
+console.log(`I am ${heroName}!`);
