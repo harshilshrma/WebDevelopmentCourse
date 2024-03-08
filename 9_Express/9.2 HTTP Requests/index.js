@@ -10,6 +10,10 @@ app.get("/about", (req, res) => {
     res.send("<h1>hello meow, you are in about!</h1>")
 })
 
+app.get("/contact", (req, res) => {
+    res.send("<h1>hello meow, you are in contact!</h1>")
+})
+
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
